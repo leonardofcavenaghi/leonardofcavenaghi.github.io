@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research &amp; Publications — Leonardo Francisco Cavenaghi</title>
+  <meta name="description" content="Research overview, publications, preprints, and theses of Leonardo Francisco Cavenaghi in Birational & Algebraic Geometry, Theory of Atoms, Differential Geometry, and Mathematical Physics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="site-brand">Leonardo F. Cavenaghi</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="research.html" class="active">Research &amp; Publications</a>
+        <a href="geoatoms.html">GEOATOMS &amp; Software</a>
+        <a href="talks.html">Talks</a>
+        <a href="teaching.html">Teaching &amp; Activities</a>
+        <a href="cv.html">CV &amp; Bio</a>
+        <a href="assets/docs/CV_Leonardo_Cavenaghi.pdf" class="nav-cv-btn" target="_blank">CV (PDF)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Research &amp; Publications</h1>
+    <p class="subtitle">
+      Detailed overview of my research areas, preprints, published journal articles, monographs in preparation, and theses.
+      Full lists are also available on <a href="https://arxiv.org/a/cavenaghi_l_1.html" target="_blank">arXiv</a> and <a href="https://scholar.google.com/citations?user=y4dja6sAAAAJ" target="_blank">Google Scholar</a>.
+    </p>
+
+    <h2>Research Overview &amp; Specialties</h2>
+
+    <div class="specialties-grid">
+      <div class="specialty-card">
+        <h3>I. Theory of Atoms, Quantum Connections &amp; Birational Geometry</h3>
+        <p>
+          The <em>Theory of Atoms</em> (initiated by Katzarkov–Kontsevich–Pantev–Yu) combines Hodge structures with genus-zero Gromov–Witten invariants over a non-Archimedean field $\mathbb{k}$ to decompose the tangent bundle of the $A$-model Frobenius manifold $B_X$ under the Mumford–Tate group $\mathrm{Hod}$ and the Euler operator $\kappa_b = \mathrm{Eu}_b \star_b$ into elementary building blocks—<strong>Hodge atoms</strong>—that behave predictably under blow-ups.
+        </p>
+        <p style="margin-top:0.5rem;">
+          In joint work with L. Katzarkov and M. Kontsevich (<a href="https://arxiv.org/abs/2509.15831" target="_blank">arXiv:2509.15831</a>), we extended this framework to <strong>$G$-equivariant birational geometry</strong> and initiated the theory of <strong>Chen–Ruan atoms</strong> for Deligne–Mumford stacks/orbifolds $[X/G]$, unifying Hodge atoms with the modular symbols of Kontsevich–Pestun–Tschinkel and Burnside invariants of Kresch–Tschinkel to produce new examples of non-$G$-linearizable actions on rational varieties and quadric intersections. Recent developments include cyclic generic factors and regularized exponents of the quantum connection (<a href="https://arxiv.org/abs/2610.06669" target="_blank">arXiv:2610.06669</a>), root-theoretic localization and atomic decompositions of complete intersections in flag varieties (<a href="https://arxiv.org/abs/2609.21914" target="_blank">arXiv:2609.21914</a>), and an atomic proof of <strong>Shokurov's conic-bundle conjecture</strong> (<a href="https://arxiv.org/abs/2610.41174" target="_blank">arXiv:2610.41174</a>).
+        </p>
+      </div>
+
+      <div class="specialty-card">
+        <h3>II. GEOATOMS: Computational Quantum Cohomology &amp; AI</h3>
+        <p>
+          Populating the "periodic table of atoms" across families of projective varieties requires exact genus-zero Gromov–Witten and quantum-connection computations at scale. I lead the development of <a href="geoatoms.html"><strong>GEOATOMS</strong></a> (<a href="https://leonardofcavenaghi.github.io/atomicdecompositions/" target="_blank">website &amp; catalogue</a> · <a href="https://github.com/leonardofcavenaghi/atomicdecompositions" target="_blank">GitHub</a>), an open computational infrastructure and Python/SageMath suite (<code>gwflags</code>, <code>gwtoric</code>, <code>gwapp</code>).
+        </p>
+        <p style="margin-top:0.5rem;">
+          The library computes genus-0 Gromov–Witten invariants and small quantum multiplication matrices $c_1(TX)\star$ for arbitrary simple or product flag varieties $G/P$, toric varieties, and their complete intersections via Graber–Pandharipande virtual localization, Billey's Schubert restriction formula, center-rooted AHU tree hashing, and two-point exact rational evaluation—supporting a public catalogue of 131+ completed symbolic datasets and AI-assisted pattern discovery.
+        </p>
+      </div>
+
+      <div class="specialty-card">
+        <h3>III. Symplectic Geometry, Mirror Symmetry &amp; Generalized Geometry</h3>
+        <p>
+          My work in mathematical physics and complex/symplectic geometry explores mirror symmetry and dualities beyond the Kähler realm. With L. Grama and L. Katzarkov (<em>Advances in Mathematics</em>, 2026), we constructed a geometric realization of <strong>spherical T-duality</strong> for oriented $S^3$-bundles over $S^4$ (Milnor bundles) via $\star$-diagrams and higher-dimensional generalized logarithmic transformations, showing that $S^1$-stabilized homotopy 7-spheres (such as $S^7 \times S^1$ and $\Sigma^7_{GM} \times S^1$) are linked by explicit cut-and-paste transformations, and we study mirror symmetry for homotopy Hopf manifolds (with D. Auroux, L. Grama, L. Katzarkov).
+        </p>
+        <p style="margin-top:0.5rem;">
+          In collaboration with L. Grama, L. Katzarkov, P. A. Muniz Martins, M. de Andrade Pinto, and L. C. B. Maia (<a href="https://arxiv.org/abs/2604.19303" target="_blank">arXiv:2604.19303</a>, <a href="https://arxiv.org/abs/2609.00254" target="_blank">arXiv:2609.00254</a>, <a href="https://arxiv.org/abs/2610.20153" target="_blank">arXiv:2610.20153</a>), we study non-Kähler <strong>SYZ mirror symmetry for solvmanifolds</strong> via the Fourier–Mukai transform, classify nilpotent SYZ mirror pairs, and analyze invariant generalized complex structures and generalized Dolbeault, Bott–Chern, and Aeppli cohomologies on almost abelian solvmanifolds.
+        </p>
+      </div>
+
+      <div class="specialty-card">
+        <h3>IV. Differential Geometry, Curvature, Foliations &amp; Exotic Structures</h3>
+        <p>
+          A foundational pillar of my research concerns how symmetry and metric deformations control curvature, topology, and smooth structures:
+        </p>
+        <ul style="font-size:0.9rem; color:var(--text-muted); padding-left:1.2rem; margin:0.35rem 0 0;">
+          <li><strong>Cheeger Deformations &amp; $\star$-Diagrams:</strong> Introducing $\star$-diagrams (<em>IMRN</em>, 2020) and sharp curvature estimates for Cheeger deformations on $G$-manifolds and fiber bundles (<em>Collect. Math.</em> 2024 — <em>Distinguished Paper Award</em>; <em>Adv. Geom.</em> 2022; <em>São Paulo J. Math. Sci.</em> 2023).</li>
+          <li><strong>Fat Bundles &amp; Symmetric Spaces:</strong> Classification and rigidity of fat Riemannian submersions (<em>Internat. J. Math.</em> 2026), resolving the Petersen–Wilhelm conjecture for principal $S^3$/$\mathrm{SO}(3)$ and homogeneous submersions (<a href="https://arxiv.org/abs/2207.10749" target="_blank">arXiv:2207.10749</a>), and realizing symmetric spaces as cotangent bundles of flag manifolds to construct counterexamples to the converse of the Soul Conjecture (<em>Rev. Mat. Complut.</em> 2024).</li>
+          <li><strong>Singular Riemannian Foliations (SRFs) &amp; Flows:</strong> Extending Palais' Principle of Symmetric Criticality to SRFs to solve $p$-Kirchhoff variational problems (<em>Ann. Mat. Pura Appl.</em> 2026), mean curvature flow on noncompact SRFs (<em>Diff. Geom. Appl.</em> 2020), and homogeneous Ricci flow dynamics on $\mathrm{SU}(3)/T^2$ (<em>Mat. Contemp.</em> 2024).</li>
+          <li><strong>Exotic Smooth Structures &amp; Spacetimes:</strong> Proving that basic Laplacian spectra cannot distinguish exotic smooth structures (<em>Adv. Nonlinear Stud.</em> 2025), establishing the $G$-equivariant Kazdan–Warner scalar curvature four-fold classification (<a href="https://arxiv.org/abs/2106.14709" target="_blank">arXiv:2106.14709</a>), and constructing geodesically complete Lorentzian metrics with positive Ricci curvature on exotic spheres (<em>Diff. Geom. Appl.</em> 2024).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Filter Controls -->
+    <h2>Publications &amp; Preprints</h2>
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterPubs('all', this)">All Works (27)</button>
+      <button class="filter-btn" onclick="filterPubs('atoms', this)">Birational Geometry, Hodge Theory &amp; Atoms</button>
+      <button class="filter-btn" onclick="filterPubs('physics', this)">Mirror Symmetry, Generalized Geometry &amp; T-Duality</button>
+      <button class="filter-btn" onclick="filterPubs('diffgeom', this)">Differential Geometry, Curvature &amp; Foliations</button>
+    </div>
+
+    <!-- PREPRINTS -->
+    <h3>Preprints &amp; Submitted Manuscripts (14)</h3>
+    <ol class="pub-list">
+
+      <li class="pub-item" data-area="atoms">
+        <span class="pub-number">[P14]</span>
+        <span class="pub-title">An atomic approach to Shokurov's conic-bundle conjecture</span>
+        <span class="pub-authors">(joint with Ludmil Katzarkov, Daniel Pomerleano, and Zhijia Zhang)</span>
+        <div class="pub-venue">
+          Preprint (October 2026, 25 pp.)
+          <span class="badge-row">
+            <a href="https://arxiv.org/abs/2610.41174" class="badge" target="_blank">arXiv:2610.41174</a>
+            <a href="https://arxiv.org/pdf/2610.41174" class="badge" target="_blank">PDF</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Applies a weaker version of Hodge atoms to prove Shokurov's conjecture on the rationality of conic bundle threefolds, establishing that a standard conic bundle over a smooth complex projective rational surface $S$ with discriminant divisor $\Delta$ is irrational whenever $|2K_S + \Delta| \neq \emptyset$. As a consequence, determines precisely which nodal quartic double solids are rational.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="physics">
+        <span class="pub-number">[P13]</span>
+        <span class="pub-title">On the generalized cohomologies of almost abelian solvmanifolds</span>
+        <span class="pub-authors">(joint with Mauro de Andrade Pinto, Letícia Camponês do Brasil Maia, and Pedro Antonio Muniz Martins)</span>
+        <div class="pub-venue">
+          Preprint (October 2026)
+          <span class="badge-row">
+            <a href="https://arxiv.org/abs/2610.20153" class="badge" target="_blank">arXiv:2610.20153</a>
+            <a href="https://arxiv.org/pdf/2610.20153" class="badge" target="_blank">PDF</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Investigates generalized Dolbeault, Bott–Chern, and Aeppli cohomologies associated with invariant generalized complex structures on almost abelian Lie algebras $\mathfrak{g}_A = \mathbb{R}e_0 \ltimes_A \mathfrak{h}$ and solvmanifolds $\Gamma \backslash G_A$. Identifies invariant generalized Dolbeault cohomology with the Chevalley–Eilenberg cohomology of an almost abelian complex Lie algebra $\mathcal{L}$, yielding explicit combinatorial dimension formulas and injection theorems into compact quotients.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="atoms">
+        <span class="pub-number">[P12]</span>
+        <span class="pub-title">A quantum connection approach to rationality</span>
+        <span class="pub-authors">(joint with Luiz Carazolli, Ludmil Katzarkov, Maxim Kontsevich, and Pedro Antonio Muniz Martins)</span>
+        <div class="pub-venue">
+          Preprint (October 2026)
+          <span class="badge-row">
+            <a href="https://arxiv.org/abs/2610.06669" class="badge" target="_blank">arXiv:2610.06669</a>
+            <a href="https://arxiv.org/pdf/2610.06669" class="badge" target="_blank">PDF</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Extracts ranks and regularized exponents from cyclic generic factors of the quantum connection and proves their persistence under birational transformations. Applies these quantum-connection invariants to establish non-rationality for cubic threefolds, ordinary Gushel–Mukai threefolds, very general quartic fourfolds, and products $X \times \mathbb{P}^1$ of those threefolds with the projective line.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="atoms">
+        <span class="pub-number">[P11]</span>
+        <span class="pub-title">On the atomic decomposition of complete intersection in flag varieties</span>
+        <span class="pub-authors">(joint with Boris Alexeev, Giovane Galindo, Bogdan Georgiev, Ludmil Katzarkov, and Pedro Antonio Muniz Martins)</span>
+        <div class="pub-venue">
+          Preprint (September 2026; revised October 2026)
+          <span class="badge-row">
+            <a href="https://arxiv.org/abs/2609.21914" class="badge" target="_blank">arXiv:2609.21914</a>
+            <a href="https://arxiv.org/pdf/2609.21914" class="badge" target="_blank">PDF</a>
+            <a href="https://leonardofcavenaghi.github.io/atomicdecompositions/" class="badge badge-geoatoms" target="_blank">GEOATOMS Code &amp; Catalogue</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Develops a root-theoretic torus localization formalism expressing genus-zero Gromov–Witten invariants of flag varieties and smooth complete intersections as sums over decorated trees, connecting them to the KKPY Theory of Hodge Atoms via quantum multiplication by $c_1(X)$. Establishes spectral criteria on the monodromy-fixed block for irrationality and K3-surface blowup centers of Fano fourfolds with $h^{3,1}(X)=1$, proving the irrationality of very general complete intersections in $\operatorname{LG}(3,6)$, $G_2/P_2$, and the spinor $10$-fold.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="physics">
+        <span class="pub-number">[P10]</span>
+        <span class="pub-title">On the generalized geometry of almost abelian solvmanifolds</span>
+        <span class="pub-authors">(joint with Mauro de Andrade Pinto, Letícia Camponês do Brasil Maia, and Pedro Antonio Muniz Martins)</span>
+        <div class="pub-venue">
+          Preprint (August 2026; revised September 2026)
+          <span class="badge-row">
+            <a href="https://arxiv.org/abs/2609.00254" class="badge" target="_blank">arXiv:2609.00254</a>
+            <a href="https://arxiv.org/pdf/2609.00254" class="badge" target="_blank">PDF</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Studies left-invariant generalized complex structures on almost abelian Lie groups $G_A$ and their compact quotients $\Gamma \backslash G_A$. Characterizes all admissible types and closed invariant pure-spinor generators via eigenvalue pairings when $A$ is $\mathbb{R}$-diagonalizable, establishes Jordan-theoretic type bounds for general $A$, and provides explicit intermediate-type constructions and nonexistence theorems in dimension six.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="physics">
+        <span class="pub-number">[P9]</span>
+        <span class="pub-title">The Cohomology of Solvmanifold SYZ Mirrors</span>
+        <span class="pub-authors">(joint with Lino Grama, Ludmil Katzarkov, and Pedro Antonio Muniz Martins)</span>
+        <div class="pub-venue">
+          Preprint (April 2026)
+          <span class="badge-row">
+            <a href="https://arxiv.org/abs/2604.19303" class="badge" target="_blank">arXiv:2604.19303</a>
+            <a href="https://arxiv.org/pdf/2604.19303" class="badge" target="_blank">PDF</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Investigates non-Kähler Strominger–Yau–Zaslow (SYZ) mirror symmetry for dual torus fibrations over solvmanifolds in the Lau–Tseng–Yau framework, proving that the Fourier–Mukai transform exchanges type-A special Lagrangian sections with flat $\mathrm{U}(1)$-connections and type-B line bundles satisfying the deformed Hermitian–Yang–Mills (dHYM) equation. Provides pure Lie-theoretic criteria and a complete classification of nilpotent SYZ mirror pairs, and introduces Tseng–Yau and Bott–Chern mirror bicomplexes whose basic cohomologies are isomorphic under the Fourier–Mukai transform.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="atoms">
+        <span class="pub-number">[P8]</span>
+        <span class="pub-title">Atoms meet symbols</span>
+        <span class="pub-authors">(joint with Ludmil Katzarkov and Maxim Kontsevich)</span>
+        <div class="pub-venue">
+          Preprint (September 2025; v4 revised April 2026)
+          <span class="badge-row">
+            <a href="https://arxiv.org/abs/2509.15831" class="badge" target="_blank">arXiv:2509.15831</a>
+            <a href="https://arxiv.org/pdf/2509.15831" class="badge" target="_blank">PDF</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Unifies the Katzarkov–Kontsevich–Pantev–Yu (KKPY) theory of Hodge atoms with the Kontsevich–Pestun–Tschinkel theory of modular symbols and Burnside groups to create a framework for $G$-equivariant birational geometry, initiating the theory of Chen–Ruan atoms for global quotient orbifolds $[X/G]$. Develops new geometric invariants for $\mathbb{Z}/2$- and $\mathbb{Z}/3$-actions on surfaces and threefolds and produces new examples of non-$G$-linearizable actions on rational and complete intersection varieties.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="atoms">
+        <span class="pub-number">[P7]</span>
+        <span class="pub-title">A Gromov–Witten approach to $G$-equivariant birational invariants</span>
+        <span class="pub-authors">(joint with Lino Grama and Ludmil Katzarkov)</span>
+        <div class="pub-venue">
+          Preprint (May 2024; v4 revised October 2025)
+          <span class="badge-row">
+            <a href="https://arxiv.org/abs/2405.07322" class="badge" target="_blank">arXiv:2405.07322</a>
+            <a href="https://arxiv.org/pdf/2405.07322" class="badge" target="_blank">PDF</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Connects orbifold Chen–Ruan cohomology and Deligne cohomology constructions of Lupercio–Uribe with $G$-equivariant birational invariants (Burnside groups and modular symbols of Kontsevich, Kresch, Pestun, and Tschinkel). Lays the initial programmatic bridge linking equivariant Gromov–Witten invariants, the theory of atoms, and smooth invariants of hypersurface singularity links.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="diffgeom">
+        <span class="pub-number">[P6]</span>
+        <span class="pub-title">The complete dynamics description of positively curved metrics in the Wallach flag manifold $\mathrm{SU}(3)/\mathrm{T}^2$</span>
+        <span class="pub-authors">(joint with Lino Grama, Ricardo M. Martins, and Douglas D. Novaes)</span>
+        <div class="pub-venue">
+          Preprint (July 2023, 15 pp., 12 figures)
+          <span class="badge-row">
+            <a href="https://arxiv.org/abs/2307.06418" class="badge" target="_blank">arXiv:2307.06418</a>
+            <a href="https://arxiv.org/pdf/2307.06418" class="badge" target="_blank">PDF</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Provides a complete phase-plane dynamical analysis of the three-parameter family of invariant metrics on the Wallach flag manifold $\mathrm{SU}(3)/\mathrm{T}^2$ restricted to the normalized tetrahedron $x+y+z=1$ under the projected homogeneous Ricci flow. Explicitly delineates all regions of positive sectional, Ricci, intermediate Ricci, and scalar curvature, characterizing curvature sign preservation and escape along the flow as well as induced evolutions on fiber bundles over $\mathrm{SU}(3)/\mathrm{T}^2$.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="diffgeom">
+        <span class="pub-number">[P5]</span>
+        <span class="pub-title">Fatness and positive curvatures on Riemannian submersions</span>
+        <span class="pub-authors">(joint with Lino Grama and Llohann D. Sperança; formerly titled <em>The Petersen–Wilhelm conjecture on principal bundles</em>)</span>
+        <div class="pub-venue">
+          Preprint (July 2022; v5 revised August 2026)
+          <span class="badge-row">
+            <a href="https://arxiv.org/abs/2207.10749" class="badge" target="_blank">arXiv:2207.10749</a>
+            <a href="https://arxiv.org/pdf/2207.10749" class="badge" target="_blank">PDF</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Introduces new intrinsic notions of fatness for Riemannian submersions—including integral fatness, sub-fatness, weakly nonnegative curvature (WNN), and $A$-Clifford submersions—via dual holonomy fields. Proves that positive sectional curvature implies fatness within the WNN class, thereby verifying the Petersen–Wilhelm fiber dimension conjecture for homogeneous submersions and principal $\mathrm{S}^3$- and $\mathrm{SO}(3)$-bundles, and characterizes $3$-Sasakian geometry in rank three.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="diffgeom">
+        <span class="pub-number">[P4]</span>
+        <span class="pub-title">A note on the vertizontal curvature of fat bundles</span>
+        <span class="pub-authors">(sole author)</span>
+        <div class="pub-venue">
+          Preprint (July 2022; v3 revised January 2024)
+          <span class="badge-row">
+            <a href="https://arxiv.org/abs/2207.10757" class="badge" target="_blank">arXiv:2207.10757</a>
+            <a href="https://arxiv.org/pdf/2207.10757" class="badge" target="_blank">PDF</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Addresses a question posed by W. Ziller on whether the base metric of a fat principal $G$-bundle ($\dim G = 3$) with totally geodesic orbits can be modified to render all vertical curvatures constant and equal to $1$. Establishes a rigidity theorem for fat Riemannian foliations with bounded holonomy under a point-wise vertizontal curvature condition satisfied by locally symmetric spaces.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="diffgeom">
+        <span class="pub-number">[P3]</span>
+        <span class="pub-title">Singular Riemannian Foliations and the prescribing scalar curvature problem</span>
+        <span class="pub-authors">(joint with Marcos M. Alexandrino)</span>
+        <div class="pub-venue">
+          Preprint (November 2021)
+          <span class="badge-row">
+            <a href="https://arxiv.org/abs/2111.13257" class="badge" target="_blank">arXiv:2111.13257</a>
+            <a href="https://arxiv.org/pdf/2111.13257" class="badge" target="_blank">PDF</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Proves a Kondrachov embedding theorem and a Palais-type Principle of Symmetric Criticality for basic functions of orbit-like singular Riemannian foliations (including proper Lie groupoid orbits). Applies these analytical tools to study the foliated Yamabe problem and the existence of constant scalar curvature metrics on fiber bundles with homogeneous fibers and on exotic spheres.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="diffgeom">
+        <span class="pub-number">[P2]</span>
+        <span class="pub-title">The $G$-equivariant Kazdan–Warner problem</span>
+        <span class="pub-authors">(joint with João Marcos do Ó and Llohann D. Sperança; formerly titled <em>The symmetric Kazdan–Warner problem and applications</em>)</span>
+        <div class="pub-venue">
+          Preprint (June 2021; v5 revised June 2026)
+          <span class="badge-row">
+            <a href="https://arxiv.org/abs/2106.14709" class="badge" target="_blank">arXiv:2106.14709</a>
+            <a href="https://arxiv.org/pdf/2106.14709" class="badge" target="_blank">PDF</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Establishes the $G$-equivariant analogue of the Kazdan–Warner scalar curvature trichotomy for closed manifolds ($n \ge 3$) with an effective isometric action of a compact connected Lie group $G$ of cohomogeneity $\ge 1$ and no fixed points. Discovers a novel fourth class—<em>totally $G$-positive</em> pairs $(M,G)$—for which every $G$-invariant metric has positive total scalar curvature and which admit $G$-invariant positive constant scalar curvature metrics but no zero or negative constant scalar curvature metrics.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="diffgeom">
+        <span class="pub-number">[P1]</span>
+        <span class="pub-title">A direct approach to prescribing scalar curvature on bundles</span>
+        <span class="pub-authors">(joint with Llohann D. Sperança; formerly titled <em>On prescribing scalar curvature on bundles and applications</em>)</span>
+        <div class="pub-venue">
+          Preprint (December 2020; v4 revised May 2023)
+          <span class="badge-row">
+            <a href="https://arxiv.org/abs/2012.13272" class="badge" target="_blank">arXiv:2012.13272</a>
+            <a href="https://arxiv.org/pdf/2012.13272" class="badge" target="_blank">PDF</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Characterizes which smooth functions can be realized as scalar curvature functions on total spaces of fiber bundles—including bundles over exotic manifolds and Calabi–Yau manifolds—by combining Kazdan–Warner perturbation techniques with variational methods for Riemannian submersions.</div>
+          </details>
+        </div>
+      </li>
+
+    </ol>
+
+    <!-- PUBLISHED & ACCEPTED ARTICLES -->
+    <h3>Published &amp; Accepted Articles (in reverse chronological order) (13)</h3>
+    <ol class="pub-list">
+
+      <li class="pub-item" data-area="physics">
+        <span class="pub-number">[J12]</span>
+        <span class="pub-title">A geometric realization of spherical T-duality via $\star$-diagrams</span>
+        <span class="pub-authors">(joint with Lino Grama and Ludmil Katzarkov)</span>
+        <div class="pub-venue">
+          <strong>Advances in Mathematics</strong> 503 (2026), Article 111202.
+          <span class="badge-row">
+            <a href="https://doi.org/10.1016/j.aim.2026.111202" class="badge" target="_blank">Published Version (DOI)</a>
+            <a href="https://arxiv.org/abs/2404.19088" class="badge" target="_blank">arXiv:2404.19088</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Relates spherical T-duality for oriented linear $\mathrm{S}^3$-bundles over $\mathrm{S}^4$ (Milnor bundles) to $\star$-diagrams and higher-dimensional generalized logarithmic transformations. Proves that after $\mathrm{S}^1$-stabilization, spherical T-dualities between homotopy $7$-spheres—including the passage from $\mathrm{S}^7 \times \mathrm{S}^1$ to $\Sigma^7_{GM} \times \mathrm{S}^1$ for the Gromoll–Meyer exotic sphere—are realized by explicit cut-and-paste generalized logarithmic transformations.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="diffgeom">
+        <span class="pub-number">[J11]</span>
+        <span class="pub-title">Singular Riemannian foliations, variational problems and principles of symmetric criticalities</span>
+        <span class="pub-authors">(joint with Marcos M. Alexandrino, Diego Corro, and Marcelo K. Inagaki)</span>
+        <div class="pub-venue">
+          <strong>Annali di Matematica Pura ed Applicata</strong> 205, no. 5 (2026), 2507–2572.
+          <span class="badge-row">
+            <a href="https://doi.org/10.1007/s10231-026-01679-z" class="badge" target="_blank">Published Version (DOI)</a>
+            <a href="https://arxiv.org/abs/2311.07058" class="badge" target="_blank">arXiv:2311.07058</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Establishes an analogue of Palais' Principle of Symmetric Criticality for $\mathcal{F}$-symmetric integral operators on Banach Sobolev spaces $W^{1,p}(M)$ over compact manifolds equipped with singular Riemannian foliations (including isoparametric foliations). Combined with a foliated Rellich–Kondrachov–Hebey–Vaugon embedding theorem, this bypasses classical Sobolev critical exponent obstructions and yields infinitely many weak solutions to $p$-Kirchhoff-type variational problems.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="diffgeom">
+        <span class="pub-number">[J10]</span>
+        <span class="pub-title">A curvature approach to fatness</span>
+        <span class="pub-authors">(joint with Lino Grama)</span>
+        <div class="pub-venue">
+          <strong>International Journal of Mathematics</strong> 37, nos. 5–6 (2026), Article 2542001.
+          <span class="badge-row">
+            <a href="https://doi.org/10.1142/S0129167X25420017" class="badge" target="_blank">Published Version (DOI)</a>
+            <a href="https://arxiv.org/abs/2212.08154" class="badge" target="_blank">arXiv:2212.08154</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Investigates the structural geometry of fat Riemannian submersions with non-negative sectional curvature. Classifies their fibers as symmetric spaces, establishes an isometric correspondence between fat foliations and coset foliations on Lie groups, and proves rigidity theorems for dual foliations associated with fat submersions.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="diffgeom">
+        <span class="pub-number">[A1]</span>
+        <span class="pub-title">The curvature of convex sum of metrics and applications</span>
+        <span class="pub-authors">(joint with Giovane Galindo and Llohann D. Sperança)</span>
+        <div class="pub-venue">
+          Accepted for publication in <strong>Differential Geometry in Latin America 2025</strong>.
+          <span class="badge-row">
+            <a href="https://arxiv.org/abs/2106.14781" class="badge" target="_blank">arXiv:2106.14781</a>
+            <a href="https://arxiv.org/pdf/2106.14781" class="badge" target="_blank">PDF</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Derives explicit formulas for the Riemann curvature tensor along a convex combination of Riemannian metrics $g_t = (1-t)g_0 + t g_1$ and establishes necessary and sufficient higher-order conditions ($r \ge 2$) for increasing the average sectional curvature along an immersed totally geodesic flat torus, with applications to conformal deformations, vertical warpings, and Cheeger deformations.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="physics">
+        <span class="pub-number">[J9]</span>
+        <span class="pub-title">Hearing exotic smooth structures</span>
+        <span class="pub-authors">(joint with João Marcos do Ó and Llohann D. Sperança)</span>
+        <div class="pub-venue">
+          <strong>Advanced Nonlinear Studies</strong> 25, no. 4 (2025), 1112–1126.
+          <span class="badge-row">
+            <a href="https://doi.org/10.1515/ans-2023-0151" class="badge" target="_blank">Published Version (DOI)</a>
+            <a href="https://arxiv.org/abs/2402.10106" class="badge" target="_blank">arXiv:2402.10106</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Studies basic eigenvalues and eigenfunctions of the Riemannian Laplacian on closed manifolds with effective isometric compact Lie group actions. Demonstrates that homeomorphic but non-diffeomorphic manifolds (such as exotic homotopy spheres) can carry invariant metrics with identical basic Laplacian spectra and identical rings of invariant admissible scalar curvature functions, proving that basic spectral data cannot distinguish exotic smooth structures.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="physics">
+        <span class="pub-number">[J8]</span>
+        <span class="pub-title">Gromoll–Meyer's actions and the geometry of (exotic) spacetimes</span>
+        <span class="pub-authors">(joint with Lino Grama)</span>
+        <div class="pub-venue">
+          <strong>Differential Geometry and its Applications</strong> 94 (2024), Article 102121.
+          <span class="badge-row">
+            <a href="https://doi.org/10.1016/j.difgeo.2024.102121" class="badge" target="_blank">Published Version (DOI)</a>
+            <a href="https://arxiv.org/abs/2403.08960" class="badge" target="_blank">arXiv:2403.08960</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Develops an equivariant computational framework (via negative-parameter Cheeger deformations and $\star$-constructions) to build Lorentzian spacetime metrics on classical and exotic spheres, including the Gromoll–Meyer exotic $7$-sphere. Constructs time-oriented, geodesically complete Lorentzian metrics with positive Ricci curvature on homeomorphic but non-diffeomorphic manifolds sharing identical physical properties.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="diffgeom">
+        <span class="pub-number">[J7]</span>
+        <span class="pub-title">Symmetric spaces as adjoint orbits and their geometries</span>
+        <span class="pub-authors">(joint with Carolina Garcia, Lino Grama, and Luiz A. B. San Martin)</span>
+        <div class="pub-venue">
+          <strong>Revista Matemática Complutense</strong> 37, no. 3 (2024), 921–966.
+          <span class="badge-row">
+            <a href="https://doi.org/10.1007/s13163-024-00486-5" class="badge" target="_blank">Published Version (DOI)</a>
+            <a href="https://arxiv.org/abs/2302.09638" class="badge" target="_blank">arXiv:2302.09638</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Realizes classical symmetric spaces (including Berger's semi-Kähler symmetric spaces) as cotangent bundles of symmetric flag manifolds, enabling an explicit description of their geodesics and Lagrangian submanifolds. Uses these bundle constructions to answer a question of W. Ziller in the negative by providing the first examples of vector bundles over simply connected non-negatively curved manifolds that admit no metric of non-negative sectional curvature even though their unit sphere bundles do.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="diffgeom">
+        <span class="pub-number">[J6]</span>
+        <span class="pub-title">On the dynamics of positively curved metrics on $\mathrm{SU}(3)/\mathrm{T}^2$ under the homogeneous Ricci flow</span>
+        <span class="pub-authors">(joint with Lino Grama and Ricardo M. Martins)</span>
+        <div class="pub-venue">
+          <strong>Matemática Contemporânea</strong> 60 (2024), 3–30.
+          <span class="badge-row">
+            <a href="https://doi.org/10.21711/231766362024/rmc602" class="badge" target="_blank">Published Version (DOI)</a>
+            <a href="https://arxiv.org/abs/2305.06119" class="badge" target="_blank">arXiv:2305.06119</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Shows that the classical Wallach flag manifold $\mathrm{SU}(3)/\mathrm{T}^2$ and generalized flag manifolds $\mathrm{SU}(m+2p)/\mathrm{S}(\mathrm{U}(m)\times\mathrm{U}(p)\times\mathrm{U}(p))$ admit invariant metrics of positive intermediate Ricci curvature ($\mathrm{Ric}_d > 0$ for $d \in \{1,2,3,4,5\}$) that lose positivity along the homogeneous Ricci flow for $d \in \{1,2,3,5\}$.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="diffgeom">
+        <span class="pub-number">[J5]</span>
+        <span class="pub-title">Positive Ricci curvature through Cheeger deformations</span>
+        <span class="pub-authors">(joint with Renato J. M. e Silva and Llohann D. Sperança)</span>
+        <div class="pub-venue">
+          <strong>Collectanea Mathematica</strong> 75, no. 2 (2024; online Feb 2023), 481–510.
+          <span class="badge-row">
+            <span class="badge badge-award">2024 Distinguished Paper Award</span>
+            <a href="https://doi.org/10.1007/s13348-023-00396-7" class="badge" target="_blank">Published Version (DOI)</a>
+            <a href="https://arxiv.org/abs/1810.09725" class="badge" target="_blank">arXiv:1810.09725</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Conducts an in-depth curvature analysis of Cheeger deformations on manifolds with isometric group actions, establishing sharp estimates near singular orbits to answer a question of Searle and Wilhelm on lifting positive Ricci curvature from orbit spaces. Awarded the 2024 <em>Collectanea Mathematica Distinguished Paper Award</em> by the journal's Editorial Board.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="diffgeom">
+        <span class="pub-number">[J4]</span>
+        <span class="pub-title">The concept of Cheeger deformations on fiber bundles with compact structure group</span>
+        <span class="pub-authors">(joint with Lino Grama and Llohann D. Sperança)</span>
+        <div class="pub-venue">
+          <strong>São Paulo Journal of Mathematical Sciences</strong> 17, no. 2 (2023), 441–464.
+          <span class="badge-row">
+            <a href="https://doi.org/10.1007/s40863-022-00343-7" class="badge" target="_blank">Published Version (DOI)</a>
+            <a href="https://arxiv.org/abs/1801.06576" class="badge" target="_blank">arXiv:1801.06576</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Systematically develops Cheeger deformations on fiber bundles with compact structure group, providing a unified geometric language that recovers and extends foundational curvature regularization results of Schwachhöfer–Tuschmann, Fukaya–Yamaguchi, and Searle–Solórzano–Wilhelm.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="diffgeom">
+        <span class="pub-number">[J3]</span>
+        <span class="pub-title">Positive Ricci curvature on fiber bundles with compact structure group</span>
+        <span class="pub-authors">(joint with Llohann D. Sperança)</span>
+        <div class="pub-venue">
+          <strong>Advances in Geometry</strong> 22, no. 1 (2022), 95–104.
+          <span class="badge-row">
+            <a href="https://doi.org/10.1515/advgeom-2021-0007" class="badge" target="_blank">Published Version (DOI)</a>
+            <a href="https://arxiv.org/abs/1911.03608" class="badge" target="_blank">arXiv:1911.03608</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Gives a direct proof of the existence of metrics with positive Ricci curvature on the total spaces of fiber bundles with compact structure groups, unifying classical theorems of Nash and Poor and constructing new positively Ricci-curved bundles over gradient shrinking Ricci solitons.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="diffgeom">
+        <span class="pub-number">[J2]</span>
+        <span class="pub-title">On mean curvature flow of singular Riemannian foliations: Noncompact cases</span>
+        <span class="pub-authors">(joint with Marcos M. Alexandrino and Ícaro Gonçalves)</span>
+        <div class="pub-venue">
+          <strong>Differential Geometry and its Applications</strong> 72 (2020), Article 101664.
+          <span class="badge-row">
+            <a href="https://doi.org/10.1016/j.difgeo.2020.101664" class="badge" target="_blank">Published Version (DOI)</a>
+            <a href="https://arxiv.org/abs/1909.04201" class="badge" target="_blank">arXiv:1909.04201</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Investigates the mean curvature flow (MCF) starting from a regular leaf of a closed generalized isoparametric foliation in noncompact settings. Proves that under bounded curvature hypotheses, every finite-time singularity collapses to a singular leaf and is of Type I, and analyzes basins of attraction and cylindrical structures.</div>
+          </details>
+        </div>
+      </li>
+
+      <li class="pub-item" data-area="diffgeom">
+        <span class="pub-number">[J1]</span>
+        <span class="pub-title">On the geometry of some equivariantly related manifolds</span>
+        <span class="pub-authors">(joint with Llohann D. Sperança)</span>
+        <div class="pub-venue">
+          <strong>International Mathematics Research Notices (IMRN)</strong> 2020, no. 23 (2020; online Nov 2018), 9730–9768.
+          <span class="badge-row">
+            <a href="https://doi.org/10.1093/imrn/rny268" class="badge" target="_blank">Published Version (DOI)</a>
+            <a href="https://arxiv.org/abs/1708.07541" class="badge" target="_blank">arXiv:1708.07541</a>
+          </span>
+          <details class="abstract-toggle">
+            <summary>Summary</summary>
+            <div class="pub-summary">Introduces the topological and geometric framework of $\star$-diagrams to link equivariantly related classical and exotic $G$-manifolds (including exotic spheres, sphere bundles, and Kervaire manifolds). Combines this construction with Cheeger deformations to produce new metrics of positive Ricci curvature and almost non-negative sectional curvature on exotic manifolds.</div>
+          </details>
+        </div>
+      </li>
+
+    </ol>
+
+    <!-- MONOGRAPHS & IN PREPARATION -->
+    <h3>Monographs &amp; Manuscripts in Advanced Preparation</h3>
+    <ul class="pub-list">
+      <li class="pub-item" data-area="atoms">
+        <span class="pub-title">$9\frac{1}{2}$ lectures in atom theory</span>
+        <span class="pub-authors">(joint with Ludmil Katzarkov and Maxim Kontsevich)</span>
+        <div class="pub-venue">Research monograph and lecture notes in final preparation (2026). Develops the foundations of Hodge atoms, non-Archimedean Gromov–Witten theory, $F$-bundles, equivariant and Chen–Ruan atoms, semi-orthogonal decompositions, and applications to higher-dimensional birational geometry.</div>
+      </li>
+      <li class="pub-item" data-area="atoms">
+        <span class="pub-title">On the atomic decomposition of complete intersection in toric varieties</span>
+        <span class="pub-authors">(joint with Milena Brockhof, Giovane Galindo, Ludmil Katzarkov, and Pedro Antonio Muniz Martins)</span>
+        <div class="pub-venue">Manuscript in final stage of preparation (2026).</div>
+      </li>
+      <li class="pub-item" data-area="physics">
+        <span class="pub-title">Mirror symmetry for homotopy Hopf manifolds</span>
+        <span class="pub-authors">(joint with Denis Auroux, Lino Grama, and Ludmil Katzarkov)</span>
+        <div class="pub-venue">Manuscript in preparation (2026).</div>
+      </li>
+    </ul>
+
+    <!-- THESES -->
+    <h3>Theses &amp; Dissertations</h3>
+    <ul class="pub-list">
+      <li class="pub-item">
+        <span class="pub-title">Ph.D. Thesis:</span> <em>Deformações métricas e aplicações</em> (<em>Metric Deformations and Applications</em>) (2020)
+        <div class="pub-venue">
+          Institute of Mathematics and Statistics, University of São Paulo (IME–USP), Brazil. Supervised by Llohann Dallagnol Sperança and co-supervised by Marcos Martins Alexandrino da Silva.
+          <span class="badge-row">
+            <span class="badge badge-award">2021 CAPES Thesis Award</span>
+            <span class="badge badge-award">2021 Carlos Gutiérrez Thesis Prize</span>
+            <a href="https://bv.fapesp.br/pt/bolsas/177992/deformacoes-metricas-e-aplicacoes/" class="badge" target="_blank">BV-FAPESP (2017/24680-1)</a>
+          </span>
+        </div>
+      </li>
+      <li class="pub-item">
+        <span class="pub-title">Master's Thesis:</span> <em>O Teorema de Calabi–Yau via fluxos de Ricci</em> (<em>The Calabi–Yau Theorem via Ricci Flows</em>) (2018)
+        <div class="pub-venue">
+          Institute of Mathematics, Statistics and Scientific Computing, University of Campinas (IMECC–UNICAMP), Brazil. Supervised by Rafael de Freitas Leão.
+        </div>
+      </li>
+      <li class="pub-item">
+        <span class="pub-title">Undergraduate Research Dissertation:</span> <em>Teorema de Hodge, uma introdução à geometria complexa e o problema das formas intrinsecamente harmônicas</em> (2015)
+        <div class="pub-venue">
+          Institute of Mathematics, Statistics and Scientific Computing, University of Campinas (IMECC–UNICAMP), Brazil. Supervised by Henrique Nogueira de Sá Earp (FAPESP 2014/06913-0).
+        </div>
+      </li>
+    </ul>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>&copy; 2026 Leonardo Francisco Cavenaghi &middot; ICMS-Sofia &amp; IMI-BAS</div>
+      <div>
+        <a href="https://arxiv.org/a/cavenaghi_l_1.html" target="_blank">arXiv</a> &middot;
+        <a href="https://scholar.google.com/citations?user=y4dja6sAAAAJ" target="_blank">Google Scholar</a> &middot;
+        <a href="https://github.com/leonardofcavenaghi" target="_blank">GitHub</a> &middot;
+        <a href="https://leonardofcavenaghi.github.io/atomicdecompositions/" target="_blank">GEOATOMS</a> &middot;
+        <a href="https://orcid.org/0000-0003-1042-3157" target="_blank">ORCID</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function filterPubs(category, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.pub-item[data-area]').forEach(item => {
+        if (category === 'all' || item.getAttribute('data-area') === category) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
