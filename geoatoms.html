@@ -37,11 +37,11 @@
   <main class="container">
     <h1>GEOATOMS &amp; Open-Source Software</h1>
     <p class="subtitle">
-      Computational algebraic geometry, exact virtual localization in Gromov–Witten theory, quantum connections, and the open data library for the <em>Geometry of Atoms</em>.
+      Computational algebraic geometry, exact virtual localization in Gromov–Witten theory, quantum connections, and the open data catalogue for the <em>Geometry of Atoms</em>.
     </p>
 
     <div class="callout">
-      <strong>GEOATOMS Live Portal &amp; GitHub Repositories:</strong>
+      <strong>GEOATOMS Portal &amp; GitHub Repositories:</strong>
       <div class="badge-row" style="margin-top:0.5rem; margin-left:0;">
         <a href="https://leonardofcavenaghi.github.io/atomicdecompositions/" class="badge badge-geoatoms" target="_blank">GEOATOMS Website &amp; Catalogue &rarr;</a>
         <a href="https://github.com/leonardofcavenaghi/atomicdecompositions" class="badge" target="_blank">GitHub: leonardofcavenaghi/atomicdecompositions</a>
@@ -52,49 +52,52 @@
 
     <h2>Overview of GEOATOMS</h2>
     <p>
-      <strong>GEOATOMS</strong> (<em>The Geometry of Atoms</em>) is an open computational infrastructure, software suite, and symbolic catalogue that I lead as part of the Theory of Atoms research program at ICMS-Sofia and IMI-BAS (in collaboration with Ludmil Katzarkov, Maxim Kontsevich, Boris Alexeev, Bogdan Georgiev, Giovane Galindo, and Pedro Antonio Muniz Martins).
+      <strong>GEOATOMS</strong> (<em>The Geometry of Atoms</em>) is an open computational platform, software suite, and symbolic catalogue to which I contribute within the Theory of Atoms research program at ICMS-Sofia and IMI-BAS (in collaboration with Ludmil Katzarkov, Maxim Kontsevich, Boris Alexeev, Bogdan Georgiev, Giovane Galindo, and Pedro Antonio Muniz Martins).
     </p>
     <p>
-      In the Theory of Atoms, birational invariants are extracted from the small and big quantum cohomology $QH^*(X)$, the quantum differential equation $(u\partial_u + u^{-1}\kappa + \mathrm{Gr})\psi(u) = 0$, the spectrum and Jordan type of the Euler multiplication operator $\kappa_b = \mathrm{Eu}_b \star_b$ over a non-Archimedean Novikov field, and the resulting splitting into $\mathbb{Z}/2$-folded polarized Hodge structures (Hodge atoms) and their Hodge polynomials $P_\alpha$. Computing these invariants end-to-end across families of Fano varieties, homogeneous spaces, and complete intersections is infeasible by hand. <strong>GEOATOMS</strong> turns the theoretical periodic table of atoms into a reproducible, open library of exact symbolic data and machine-verifiable computations.
+      In the Theory of Atoms, birational invariants are extracted from quantum cohomology $QH^*(X)$, the quantum differential equation $(u\partial_u + u^{-1}\kappa + \mathrm{Gr})\psi(u) = 0$, the spectrum and Jordan type of the Euler multiplication operator $\kappa_b = \mathrm{Eu}_b \star_b$ over a non-Archimedean field, and the resulting splitting into Hodge atoms. <strong>GEOATOMS</strong> provides reproducible symbolic computations of genus-zero Gromov–Witten invariants and ambient quantum multiplication operators across families of flag varieties, toric varieties, and supported complete intersections.
+    </p>
+    <p style="font-size:0.92rem; color:var(--text-muted);">
+      <em>Mathematical scope note:</em> For complete intersections, the returned multiplication matrix acts on the flag- or toric-ambient cohomology sector and need not describe the full cohomology of $X$; the catalogue and methodology guides state the precise hypotheses under which ambient computations yield full atomic decompositions.
     </p>
 
     <h2>Software Architecture: <code>gwflags</code>, <code>gwtoric</code> &amp; <code>gwapp</code></h2>
     <p>
-      The GEOATOMS software ecosystem runs on plain Python ($\ge 3.9$ with <code>sympy</code> and <code>mpmath</code>) as well as inside <strong>SageMath</strong> (automatically detecting Sage's symbolic ring), and provides both a Python API, a command-line interface (CLI), and a local browser GUI.
+      The software runs on plain Python ($\ge 3.9$ with <code>sympy</code> and <code>mpmath</code>) as well as inside <strong>SageMath</strong> (auto-detecting Sage's symbolic ring), and provides a Python API, a command-line interface (CLI), and a local browser GUI.
     </p>
 
     <div class="specialties-grid">
       <div class="specialty-card">
         <h3><code>gwflags</code> — Flag Varieties &amp; Complete Intersections</h3>
         <p>
-          Computes genus-0 Gromov–Witten invariants for any generalized flag variety $G/P$ of simple Lie type $A$–$G$ or products (such as $\mathbb{P}^3 \times \mathbb{P}^3$ of type <code>'A3xA3'</code>), as well as twisted invariants for complete intersections cut out by line bundles and curve-wise convex homogeneous vector bundles (quotients, subbundles, duals, direct sums, tensor, symmetric, and exterior powers).
+          Computes genus-zero Gromov–Witten invariants for any generalized flag variety $G/P$ of simple Lie type $A$–$G$ or products (such as $\mathbb{P}^3 \times \mathbb{P}^3$ of type <code>'A3xA3'</code>), as well as twisted invariants for complete intersections cut out by line bundles and curve-wise convex homogeneous vector bundles (quotients, subbundles, duals, direct sums, tensor, symmetric, and exterior powers).
         </p>
       </div>
       <div class="specialty-card">
         <h3><code>gwtoric</code> — Toric Varieties &amp; Complete Intersections</h3>
         <p>
-          Computes genus-0 Gromov–Witten invariants and quantum multiplication operators for smooth projective toric varieties and supported complete intersections from fan data, divisor classes, and torus-invariant curve coordinates, including cyclic determinant and quantum connection analysis.
+          Computes genus-zero Gromov–Witten invariants and quantum multiplication operators for smooth projective toric varieties and supported complete intersections from fan data, divisor classes, and torus-invariant curve coordinates, with supported Hodge and quantum connection analysis.
         </p>
       </div>
       <div class="specialty-card">
         <h3><code>gwapp</code> — Combined Interactive Workspace</h3>
         <p>
-          A dependency-free local web application (<code>python3 -m gwapp</code>) providing dedicated interactive workspaces for both Flag Varieties and Toric Varieties, curated benchmark presets, checkpointed execution, and JSON/symbolic export of quantum multiplication matrices $c_1(TX)\star$, grading operators $\mathrm{Gr}$, eigenvalues, and atomic Hodge polynomials.
+          A dependency-free local web application (<code>python3 -m gwapp</code>) providing dedicated Flag Varieties and Toric Varieties workspaces, curated benchmark presets, checkpointed execution, and export of quantum multiplication matrices $c_1(TX)\star$, grading operators $\mathrm{Gr}$, eigenvalues, and atomic data.
         </p>
       </div>
       <div class="specialty-card">
         <h3>The GEOATOMS Symbolic Catalogue (131+ Varieties)</h3>
         <p>
-          An online, searchable catalogue of <strong>131+ completed symbolic quantum cohomology computations</strong> covering projective complete intersections, Grassmannians, general flag varieties $G/P$ and their sections, Fano threefolds (Fanography reference catalogue), and toric varieties, with downloadable matrices, bases, and gradings.
+          A searchable online catalogue of <strong>131+ completed symbolic quantum cohomology computations</strong> covering projective complete intersections, Grassmannians, general flag varieties $G/P$ and their sections, Fano threefolds (Fanography reference catalogue), and toric varieties, with downloadable matrices, bases, and gradings.
         </p>
       </div>
     </div>
 
-    <h3>Algorithmic Innovations in <code>gwflags</code></h3>
+    <h3>Algorithmic Highlights of <code>gwflags</code></h3>
     <ul>
-      <li><strong>Graber–Pandharipande Virtual Localization &amp; Billey's Formula:</strong> Evaluates genus-0 Gromov–Witten invariants as sums over decorated trees (torus-fixed loci of stable maps $\overline{\mathcal{M}}_{0,n}(G/P, \beta)$), with equivariant Schubert classes restricted to torus fixed points via Billey's localization formula.</li>
-      <li><strong>Two-Point Exact Rational Evaluation (<code>NumericBackend</code>):</strong> Gates every invariant by the dimension axiom (<code>expected_degree</code>) and evaluates the gated localization sum exactly at two independent random rational points of the equivariant torus using pure <code>fractions.Fraction</code> arithmetic—eliminating symbolic rational-function swell in the hot loop while guarding against accidental poles.</li>
-      <li><strong>Center-Rooted AHU Tree Hashing &amp; Pruned DFS:</strong> Represents Weyl/root data as integer-normalized tuples, canonicalizes trees via AHU hashing from the tree center (yielding automorphism orders in a single pass without permutation sweeps), enumerates edge decorations via a pruned per-edge DFS, and caches all class-independent factors across quantum-matrix pair loops.</li>
+      <li><strong>Graber–Pandharipande Virtual Localization &amp; Billey's Formula:</strong> Evaluates genus-zero Gromov–Witten invariants as finite sums over decorated trees (torus-fixed loci of stable maps $\overline{\mathcal{M}}_{0,n}(G/P, \beta)$), with equivariant Schubert classes restricted to torus fixed points via Billey's formula.</li>
+      <li><strong>Two-Point Exact Rational Evaluation (<code>NumericBackend</code>):</strong> Gates every invariant by the dimension axiom (<code>expected_degree</code>) and evaluates the gated localization sum exactly at two independent random rational points of the equivariant torus using pure <code>fractions.Fraction</code> arithmetic, avoiding symbolic rational-function swell while guarding against accidental poles.</li>
+      <li><strong>Center-Rooted AHU Tree Hashing &amp; Pruned DFS:</strong> Stores Weyl/root data as integer-normalized tuples, canonicalizes decorated trees via center-rooted AHU hashing (obtaining automorphism orders in a single pass), enumerates edge decorations via pruned per-edge DFS, and caches class-independent factors across quantum-matrix pair loops.</li>
     </ul>
 
     <h3>Quick-Start Python Example</h3>
@@ -129,7 +132,7 @@ print(X.eigenvalues(M))  # [3*y1**(1/3), 3*y1**(1/3)*zeta_3, ...]</code></pre>
       <tbody>
         <tr>
           <td><strong><code>atomicdecompositions</code></strong></td>
-          <td><strong>GEOATOMS</strong>: Exact virtual localization for Gromov–Witten invariants, quantum multiplication $c_1(TX)\star$, quantum connections, and atomic decompositions in flag and toric varieties (<code>gwflags</code>, <code>gwtoric</code>, <code>gwapp</code>).</td>
+          <td><strong>GEOATOMS</strong>: Exact virtual localization for Gromov–Witten invariants, small quantum multiplication $c_1(TX)\star$, quantum connections, and atomic decompositions in flag and toric varieties (<code>gwflags</code>, <code>gwtoric</code>, <code>gwapp</code>).</td>
           <td>
             <a href="https://leonardofcavenaghi.github.io/atomicdecompositions/" class="badge badge-geoatoms" target="_blank">Website</a>
             <a href="https://github.com/leonardofcavenaghi/atomicdecompositions" class="badge" target="_blank">GitHub</a>
